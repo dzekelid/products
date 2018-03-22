@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=TerminateProvisionedProduct&k=1:
+  /?Action=TerminateProvisionedProduct:
     get:
       summary: ' Terminate Provisioned Product '
       description: Requests termination of an existing ProvisionedProduct object
