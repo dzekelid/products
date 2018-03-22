@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=SearchProductsAsAdmin&k=1:
+  /?Action=SearchProductsAsAdmin:
     get:
       summary: ' Search Products As Admin '
       description: |-
