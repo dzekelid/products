@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeProduct&k=1:
+  /?Action=DescribeProduct:
     get:
       summary: ' Describe Product '
       description: Retrieves information about a specified product
