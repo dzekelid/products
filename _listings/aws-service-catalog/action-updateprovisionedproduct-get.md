@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateProvisionedProduct&k=1:
+  /?Action=UpdateProvisionedProduct:
     get:
       summary: ' Update Provisioned Product '
       description: Requests updates to the configuration of an existing ProvisionedProduct
