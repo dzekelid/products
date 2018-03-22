@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ScanProvisionedProducts&k=1:
+  /?Action=ScanProvisionedProducts:
     get:
       summary: ' Scan Provisioned Products '
       description: |-
