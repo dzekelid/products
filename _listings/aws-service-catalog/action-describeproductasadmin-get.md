@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeProductAsAdmin&k=1:
+  /?Action=DescribeProductAsAdmin:
     get:
       summary: ' Describe Product As Admin '
       description: |-
