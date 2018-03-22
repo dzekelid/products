@@ -33,7 +33,7 @@ apis:
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/papi-v0-products-contractid-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/papi-v0-schemas-products-productid-ruleformat-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
