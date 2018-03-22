@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateProduct&k=1:
+  /?Action=CreateProduct:
     get:
       summary: ' Create Product '
       description: Creates a new product
