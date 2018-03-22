@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateProduct&k=1:
+  /?Action=UpdateProduct:
     get:
       summary: ' Update Product '
       description: Updates an existing product
