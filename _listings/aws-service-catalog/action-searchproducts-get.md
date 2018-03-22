@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=SearchProducts&k=1:
+  /?Action=SearchProducts:
     get:
       summary: ' Search Products '
       description: |-
