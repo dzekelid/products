@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ProvisionProduct&k=1:
+  /?Action=ProvisionProduct:
     get:
       summary: ' Provision Product '
       description: Requests a Provision of a specified product
