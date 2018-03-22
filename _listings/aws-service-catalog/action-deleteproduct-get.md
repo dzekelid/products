@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteProduct&k=1:
+  /?Action=DeleteProduct:
     get:
       summary: ' Delete Product '
       description: Deletes the specified product
