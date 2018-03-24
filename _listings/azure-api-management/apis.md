@@ -26,7 +26,7 @@ apis:
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/azure-api-management/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-apimanagement-service-servicename-applynetworkconfigurationupdates-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/azure-api-management/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-apimanagement-service-servicename-products-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/api-management/
