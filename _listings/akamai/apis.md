@@ -20,8 +20,8 @@ tags:
 - Bots
 - Applications
 - API LIfeycle
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-23"
+modified: "2018-03-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -33,7 +33,7 @@ apis:
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/papi-v0-schemas-products-productid-ruleformat-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/billing-center-api-v2-contracts-contractid-products-productid-statistics-year,month,fromyear,frommonth,toyear,tomonth-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
