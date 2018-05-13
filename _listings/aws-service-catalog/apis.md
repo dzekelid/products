@@ -29,15 +29,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-updateprovisionedproduct-get.md
-- name: AWS Service Catalog API Terminate Provisioned Product
-  description: Requests termination of an existing ProvisionedProduct object.
+- name: AWS Service Catalog API Update Product
+  description: Updates an existing product.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AWSServiceCatalog.png
   humanURL: https://aws.amazon.com/servicecatalog/
   baseURL: http:://{host}//
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-terminateprovisionedproduct-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-updateproduct-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/servicecatalog/latest/dg/service-catalog-api-overview.html
