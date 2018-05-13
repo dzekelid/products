@@ -25,17 +25,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/sustainable-facilities-tool-api/services-parameter-related-products-get.md
-- name: Sustainable Facilities Tool API Products
-  description: Returns all products.
+- name: Sustainable Facilities Tool API Product Details
+  description: Returns details for the product selected by parameter.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sustainable-facilities-mobile_504b7.png
   humanURL: https://sftool.gov/
   baseURL: https://api.data.gov//sftool/v1/
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/sustainable-facilities-tool-api/products-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/sustainable-facilities-tool-api/products-parameter-details-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/sustainable-facilities-tool-api/products-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/sustainable-facilities-tool-api/products-parameter-details-get-postman.md
 x-common:
 - type: x-developer
   url: https://sftool.gov/developers
