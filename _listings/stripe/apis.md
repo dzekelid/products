@@ -34,16 +34,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-post.md
-- name: Stripe Delete Products
-  description: Delete a product. Deleting a product is only possible if it has no
-    SKUs associated with it.
+- name: Stripe Get Products
+  description: Retrieves the details of an existing product. Supply the unique product
+    ID from either a product creation request or the product list, and Stripe will
+    return the corresponding product information.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-get-postman.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
