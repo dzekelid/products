@@ -1,9 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Delete Products
+  description: Delete a product. Deleting a product is only possible if it has no
+    SKUs associated with it.
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
