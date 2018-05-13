@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Service Catalog API
+  title: AWS Service Catalog API Scan Provisioned Products
   version: 1.0.0
+  description: |-
+    Returns a paginated list of all the ProvisionedProduct objects that are currently
+             available (not terminated).
 schemes:
 - http
 produces:
