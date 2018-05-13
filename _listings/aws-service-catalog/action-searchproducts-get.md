@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Service Catalog API
+  title: AWS Service Catalog API Search Products
   version: 1.0.0
+  description: |-
+    Returns a paginated list all of the Products objects to which the caller
+             has access.
 schemes:
 - http
 produces:
