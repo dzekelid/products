@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Service Catalog API
+  title: AWS Service Catalog API Terminate Provisioned Product
   version: 1.0.0
+  description: Requests termination of an existing ProvisionedProduct object.
 schemes:
 - http
 produces:
