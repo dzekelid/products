@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-custom-fields-post.md
-- name: Gumroad Get Products Variant Categories Variant Category Variants
-  description: Retrieve the details of a variant of a product.
+- name: Gumroad Put Products Variant Categories Variant Category Variants
+  description: Edit a variant of an existing product.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gumroad.jpeg
   humanURL: https://gumroad.com
   baseURL: https://api.gumroad.com//v2
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-variant-categories-variant-category-id-variants-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-variant-categories-variant-category-id-variants-id-put.md
 x-common:
 - type: x-application-management
   url: https://gumroad.com/settings/developer
