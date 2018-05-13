@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-custom-fields-post.md
-- name: Gumroad Post Products Variant Categories Variant Category Variants
-  description: Create a new variant of a product.
+- name: Gumroad Delete Products Variant Categories Variant Category Variants
+  description: Permanently delete a variant of a product.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gumroad.jpeg
   humanURL: https://gumroad.com
   baseURL: https://api.gumroad.com//v2
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-variant-categories-variant-category-id-variants-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-variant-categories-variant-category-id-variants-id-delete.md
 x-common:
 - type: x-application-management
   url: https://gumroad.com/settings/developer
