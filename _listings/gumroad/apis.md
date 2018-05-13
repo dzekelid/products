@@ -33,7 +33,44 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-custom-fields-post.md
+- name: Gumroad Put Products Custom Fields Name
+  description: Edit an existing products custom field.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gumroad.jpeg
+  humanURL: https://gumroad.com
+  baseURL: https://api.gumroad.com//v2
+  tags: Products
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-custom-fields-name-put.md
 x-common:
+- type: x-application-management
+  url: https://gumroad.com/settings/developer
+- type: x-base
+  url: https://api.gumroad.com/
+- type: x-blog
+  url: http://blog.gumroad.com
+- type: x-blog-rss
+  url: http://blog.gumroad.com/rss
+- type: x-developer
+  url: https://gumroad.com/developers
+- type: x-email
+  url: partners@gumroad.com
+- type: x-embeddable
+  url: https://gumroad.com/embed
+- type: x-github
+  url: https://github.com/gumroad
+- type: x-pricing
+  url: https://gumroad.com/features/pricing
+- type: x-privacy
+  url: https://gumroad.com/privacy
+- type: x-terms-of-service
+  url: https://gumroad.com/terms
+- type: x-twitter
+  url: https://twitter.com/gumroad
+- type: x-webhooks
+  url: https://gumroad.com/webhooks
+- type: x-website
+  url: https://gumroad.com
 - type: x-application-management
   url: https://gumroad.com/settings/developer
 - type: x-base
