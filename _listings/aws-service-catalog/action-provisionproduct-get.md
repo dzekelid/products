@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Service Catalog API
+  title: AWS Service Catalog API Provision Product
   version: 1.0.0
+  description: Requests a Provision of a specified product.
 schemes:
 - http
 produces:
