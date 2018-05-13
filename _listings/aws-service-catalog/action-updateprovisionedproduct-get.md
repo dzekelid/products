@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Service Catalog API
+  title: AWS Service Catalog API Update Provisioned Product
   version: 1.0.0
+  description: Requests updates to the configuration of an existing ProvisionedProduct
+    object.
 schemes:
 - http
 produces:
