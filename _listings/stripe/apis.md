@@ -34,15 +34,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-post.md
-- name: Stripe Add Products
-  description: Creates a new product object.
+- name: Stripe Delete Products
+  description: Delete a product. Deleting a product is only possible if it has no
+    SKUs associated with it.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-delete.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
