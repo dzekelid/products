@@ -1,9 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Get Products
+  description: Returns a list of your products. The products are returned sorted by
+    creation date, with the most recently created products appearing first.
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
