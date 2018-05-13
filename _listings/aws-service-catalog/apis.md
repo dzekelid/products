@@ -29,7 +29,26 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-updateprovisionedproduct-get.md
+- name: AWS Service Catalog API Create Product
+  description: Creates a new product.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AWSServiceCatalog.png
+  humanURL: https://aws.amazon.com/servicecatalog/
+  baseURL: http:://{host}//
+  tags: Products
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-createproduct-get.md
 x-common:
+- type: x-documentation
+  url: http://docs.aws.amazon.com/servicecatalog/latest/dg/service-catalog-api-overview.html
+- type: x-faq
+  url: https://aws.amazon.com/servicecatalog/faqs/
+- type: x-getting-started
+  url: https://aws.amazon.com/servicecatalog/getting-started/
+- type: x-pricing
+  url: https://aws.amazon.com/servicecatalog/pricing/
+- type: x-website
+  url: https://aws.amazon.com/servicecatalog/
 - type: x-documentation
   url: http://docs.aws.amazon.com/servicecatalog/latest/dg/service-catalog-api-overview.html
 - type: x-faq
