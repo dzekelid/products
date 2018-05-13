@@ -33,17 +33,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-custom-fields-post.md
-- name: Gumroad Get Products Offer Codes
-  description: Retrieve all of the existing offer codes for a product. Either amount_cents
-    or percent_off will be returned depending if the offer code is a fixed amount
-    off or a percentage off. A universal offer code is one that applies to all products.
+- name: Gumroad Post Products Offer Codes
+  description: Create a new offer code for a product. Default offer code is in cents.
+    A universal offer code is one that applies to all products.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gumroad.jpeg
   humanURL: https://gumroad.com
   baseURL: https://api.gumroad.com//v2
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-offer-codes-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-offer-codes-post.md
 x-common:
 - type: x-application-management
   url: https://gumroad.com/settings/developer
