@@ -29,17 +29,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-updateprovisionedproduct-get.md
-- name: AWS Service Catalog API Scan Provisioned Products
+- name: AWS Service Catalog API Search Products
   description: |-
-    Returns a paginated list of all the ProvisionedProduct objects that are currently
-             available (not terminated).
+    Returns a paginated list all of the Products objects to which the caller
+             has access.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AWSServiceCatalog.png
   humanURL: https://aws.amazon.com/servicecatalog/
   baseURL: http:://{host}//
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-scanprovisionedproducts-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-searchproducts-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/servicecatalog/latest/dg/service-catalog-api-overview.html
