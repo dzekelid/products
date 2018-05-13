@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Get a Rule Format&#8217;s JSON Schema
+  description: Get a Rule Format&#8217;s JSON Schema
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,11 +19,11 @@ paths:
       description: Get a Rule Format&#8217;s JSON Schema
       operationId: papiv0schemasproductsproductidruleformat
       parameters:
-      - in: String
+      - in: query
         name: productId
         description: Unique identifier for the product
         type: string
-      - in: String
+      - in: query
         name: ruleFormat
         description: Name of the rule format, either one frozen to a specific date,
           or representing the latest set of behaviors and criteria
