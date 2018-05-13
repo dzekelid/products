@@ -1,9 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Get Products
+  description: Retrieves the details of an existing product. Supply the unique product
+    ID from either a product creation request or the product list, and Stripe will
+    return the corresponding product information.
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
