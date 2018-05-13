@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Service Catalog API
+  title: AWS Service Catalog API Describe Product As Admin
   version: 1.0.0
+  description: |-
+    Retrieves information about a specified product, run with administrator
+             access.
 schemes:
 - http
 produces:
