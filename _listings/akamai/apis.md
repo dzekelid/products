@@ -25,15 +25,15 @@ modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/apis.yaml
 specificationVersion: "0.14"
 apis:
-- name: Akamai API Download Geobilling Files
-  description: Download Geobilling Files
+- name: Akamai API List Products
+  description: List Products
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Akamai_Technologies,_Inc._Logo.png
   humanURL: https://akamai.com
   baseURL: https://developer.akamai.com//
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/invoicing-api-v2-contracts-contractid-products-productid-geo-billing-files-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/akamai/papi-v0-products-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
