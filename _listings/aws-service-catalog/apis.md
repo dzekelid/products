@@ -29,15 +29,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-updateprovisionedproduct-get.md
-- name: AWS Service Catalog API Update Product
-  description: Updates an existing product.
+- name: AWS Service Catalog API Update Provisioned Product
+  description: Requests updates to the configuration of an existing ProvisionedProduct
+    object.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AWSServiceCatalog.png
   humanURL: https://aws.amazon.com/servicecatalog/
   baseURL: http:://{host}//
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-updateproduct-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/aws-service-catalog/action-updateprovisionedproduct-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/servicecatalog/latest/dg/service-catalog-api-overview.html
