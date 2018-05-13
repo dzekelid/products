@@ -34,19 +34,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-post.md
-- name: Stripe Get Products
-  description: Retrieves the details of an existing product. Supply the unique product
-    ID from either a product creation request or the product list, and Stripe will
-    return the corresponding product information.
+- name: Stripe Add Products
+  description: "Updates the specific product by setting the values of the parameters
+    passed. Any parameters not provided will be left unchanged.Note that a product\u2019s
+    attributes are not editable. Instead, you would need to deactivate the existing
+    product and create a new one with the new attribute values."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-id-post.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
