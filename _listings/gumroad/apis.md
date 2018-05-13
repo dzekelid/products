@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-custom-fields-post.md
-- name: Gumroad Get Products Offer Codes
-  description: Retrieve the details of a specific offer code of a product
+- name: Gumroad Put Products Offer Codes
+  description: Edit an existing products offer code.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gumroad.jpeg
   humanURL: https://gumroad.com
   baseURL: https://api.gumroad.com//v2
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-offer-codes-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-product-id-offer-codes-id-put.md
 x-common:
 - type: x-application-management
   url: https://gumroad.com/settings/developer
