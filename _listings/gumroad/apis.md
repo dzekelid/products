@@ -24,15 +24,15 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Gumroad Post Products
-  description: Create a new product for the user.
+- name: Gumroad Delete Products
+  description: Permanently delete a product.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gumroad.jpeg
   humanURL: https://gumroad.com
   baseURL: https://api.gumroad.com//v2
   tags: Products
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/gumroad/products-id-delete.md
 x-common:
 - type: x-application-management
   url: https://gumroad.com/settings/developer
