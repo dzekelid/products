@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Service Catalog API
+  title: AWS Service Catalog API Search Products As Admin
   version: 1.0.0
+  description: |-
+    Retrieves summary and status information about all products created within the
+             caller's account.
 schemes:
 - http
 produces:
