@@ -1,9 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Add Products
+  description: "Updates the specific product by setting the values of the parameters
+    passed. Any parameters not provided will be left unchanged.Note that a product\u2019s
+    attributes are not editable. Instead, you would need to deactivate the existing
+    product and create a new one with the new attribute values."
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
