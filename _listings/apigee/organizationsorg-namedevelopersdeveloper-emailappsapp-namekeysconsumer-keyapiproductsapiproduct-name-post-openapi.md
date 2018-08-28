@@ -175,6 +175,47 @@ paths:
       - Products
       - API
       - Productss
+    delete:
+      summary: Delete Organizations Name Developers Developer Email Apps App Name
+        Keys Consumer Key Apiproducts Apiproduct Name
+      description: Removes an API product from a developer app key profile, and thereby
+        renders the developer app unable to access the URIs defined in the API product
+        specified.
+      operationId: deleteOrganizationsOrgNameDevelopersDeveloperEmailAppsAppNameKeysConsumerKeyApiproductsApiproductNam
+      x-api-path-slug: organizationsorg-namedevelopersdeveloper-emailappsapp-namekeysconsumer-keyapiproductsapiproduct-name-delete
+      parameters:
+      - in: path
+        name: apiproduct_name
+        description: Mention the API Product name
+      - in: path
+        name: app_name
+        description: Mention the app name
+      - in: path
+        name: consumer_key
+        description: Mention the app name
+      - in: path
+        name: developer_email
+        description: Mention the developer email
+      - in: path
+        name: org_name
+        description: Mention the organization name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Developers
+      - Developer
+      - Email
+      - Applications
+      - ""
+      - Keys
+      - Consumer
+      - Key
+      - API
+      - Products
+      - API
+      - Productss
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

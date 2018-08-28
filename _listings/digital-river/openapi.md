@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Digital River
 x-complete: 1
@@ -117,4 +116,67 @@ paths:
       - Me
       - Products
       - Variations
----
+  /v1/shoppers/me/point-of-promotions/{id}/offers/{offerId}/product-offers:
+    get:
+      summary: Get Shoppers Me Point Of Promotions Offers Offerid Product Offers
+      description: Get shoppers me point of promotions offers offerid product offers.
+      operationId: getV1ShoppersMePointOfPromotionsOffersOfferProductOffers
+      x-api-path-slug: v1shoppersmepointofpromotionsidoffersofferidproductoffers-get
+      parameters:
+      - in: path
+        name: id
+      - in: path
+        name: offerId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Shoppers
+      - Me
+      - Point
+      - Promotions
+      - Offers
+      - Offerid
+      - Product
+      - Offers
+  /v1/shoppers/me/point-of-promotions/{id}/offers/{offerId}/product-offers/{productId}:
+    get:
+      summary: Get Shoppers Me Point Of Promotions Offers Offerid Product Offers Productid
+      description: Get shoppers me point of promotions offers offerid product offers
+        productid.
+      operationId: getV1ShoppersMePointOfPromotionsOffersOfferProductOffersProduct
+      x-api-path-slug: v1shoppersmepointofpromotionsidoffersofferidproductoffersproductid-get
+      parameters:
+      - in: path
+        name: id
+      - in: path
+        name: offerId
+      - in: path
+        name: productId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Shoppers
+      - Me
+      - Point
+      - Promotions
+      - Offers
+      - Offerid
+      - Product
+      - Offers
+      - Productid
+  /v1/shoppers/me/product-search:
+    get:
+      summary: Get Shoppers Me Product Search
+      description: Get shoppers me product search.
+      operationId: getV1ShoppersMeProductSearch
+      x-api-path-slug: v1shoppersmeproductsearch-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Shoppers
+      - Me
+      - Product
+      - Search

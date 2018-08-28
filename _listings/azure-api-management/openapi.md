@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Azure API Management
 x-complete: 1
@@ -15,40 +14,6 @@ produces:
 consumes:
 - application/json
 paths:
-  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/apis/{apiId}/products
-  : get:
-      summary: ApiProducts ListByApis
-      description: Lists all API associated products.
-      operationId: ApiProducts_ListByApis
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-apimanagementserviceservicenameapisapiidproducts-get
-      parameters:
-      - in: query
-        name: $filter
-        description: '| Field | Supported operators    | Supported functions                         ||-------|------------------------|---------------------------------------------||
-          name  | ge, le, eq, ne, gt, lt | substringof, contains, startswith, endswith
-          |'
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - API Products
-  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/applynetworkconfigurationupdates
-  : post:
-      summary: ApiManagementServices ApplyNetworkConfigurationUpdates
-      description: Updates the Microsoft.ApiManagement resource running in the Virtual
-        network to pick the updated network settings.
-      operationId: ApiManagementServices_ApplyNetworkConfigurationUpdates
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-apimanagementserviceservicenameapplynetworkconfigurationupdates-post
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - API Products
   ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/products
   : get:
       summary: Products ListByService
@@ -147,4 +112,3 @@ paths:
           description: OK
       tags:
       - Products
----

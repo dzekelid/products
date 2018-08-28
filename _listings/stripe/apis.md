@@ -9,83 +9,87 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe
 x-kinRank: "10"
 x-alexaRank: "1914"
 tags: Products
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Stripe Get Products
-  x-api-slug: stripe
+- name: Stripe - Get Products
+  x-api-slug: products-get
   description: Returns a list of your products. The products are returned sorted by
     creation date, with the most recently created products appearing first.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///products
-  tags: Products
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-get-openapi.md
-- name: Stripe Add Products
-  x-api-slug: stripe
+- name: Stripe - Add Products
+  x-api-slug: products-post
   description: Creates a new product object.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///products
-  tags: Products
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/products-post-openapi.md
-- name: Stripe Delete Products
-  x-api-slug: stripe
+- name: Stripe - Delete Products
+  x-api-slug: productsid-delete
   description: Delete a product. Deleting a product is only possible if it has no
     SKUs associated with it.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///products/{id}
-  tags: Products
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/productsid-delete-openapi.md
-- name: Stripe Get Products
-  x-api-slug: stripe
+- name: Stripe - Get Products
+  x-api-slug: productsid-get
   description: Retrieves the details of an existing product. Supply the unique product
     ID from either a product creation request or the product list, and Stripe will
     return the corresponding product information.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///products/{id}
-  tags: Products
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/productsid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/productsid-get-openapi.md
-- name: Stripe Add Products
-  x-api-slug: stripe
-  description: "Updates the specific product by setting the values of the parameters
-    passed. Any parameters not provided will be left unchanged.Note that a product\u2019s
+- name: Stripe - Add Products
+  x-api-slug: productsid-post
+  description: Updates the specific product by setting the values of the parameters
+    passed. Any parameters not provided will be left unchanged.Note that a product???s
     attributes are not editable. Instead, you would need to deactivate the existing
-    product and create a new one with the new attribute values."
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
-  humanURL: https://stripe.com/
-  baseURL: https://api.stripe.com/v1///products/{id}
-  tags: Products
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/productsid-post-openapi.md
-- name: Stripe
-  x-api-slug: stripe
-  description: Web and mobile payments, built for developers.
+    product and create a new one with the new attribute values.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
-  tags: Products
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/stripe/productsid-post-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://stride.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://stripe.stack.network
 - type: x-base
   url: https://api.stripe.com/
 - type: x-blog

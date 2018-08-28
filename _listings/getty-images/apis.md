@@ -8,13 +8,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1013-getty
 x-kinRank: "8"
 x-alexaRank: "1939"
 tags: Products
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/getty-images/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Getty Images Get Products
-  x-api-slug: getty-images
+- name: Getty Images - Get Products
+  x-api-slug: v3products-get
   description: "This endpoint returns all products available to the username used
     during authentication. As such, this endpoint requires the use of\r\na fully authorized
     access_token. The product data can then be used as search filters, restricting
@@ -23,26 +23,20 @@ apis:
     for more information on how to sign up for an API key."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1013-getty-images.jpg
   humanURL: http://www.gettyimages.com/
-  baseURL: https://api.gettyimages.com////v3/products
-  tags: Images,Products
+  baseURL: https://api.gettyimages.com//
+  tags: Images, Stack Network, Videos, Photos, Getting Started Example, Media, internet,
+    Technology, Marketplace, API Provider, Stocks, Photos, Photos, Photos, Profiles,
+    Publish, General Data, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/getty-images/v3products-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/getty-images/v3products-get-openapi.md
-- name: Getty Images
-  x-api-slug: getty-images
-  description: Find high resolution royalty-free images, editorial stock photos, vector
-    art, video footage clips and stock music licensing at the richest image search
-    photo library online.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1013-getty-images.jpg
-  humanURL: http://www.gettyimages.com/
-  baseURL: https://api.gettyimages.com//
-  tags: Products
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/getty-images/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://getstream.io.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://getty.images.stack.network
 - type: x-authentication
   url: https://github.com/gettyimages/connect#authentication
 - type: x-base

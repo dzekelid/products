@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Reverb
 x-complete: 0
 info:
-  title: reverb Post Products Slug Reviews
+  title: Reverb Post Products Slug Reviews
   description: Create a review for a product
   termsOfService: https://reverb.com/page/terms
   contact:

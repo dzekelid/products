@@ -81,6 +81,139 @@ paths:
       - Products
       - API
       - Productss
+    put:
+      summary: Put Organizations Name Apiproducts Apiproduct Name
+      description: This method updates an existing API product.
+      operationId: putOrganizationsOrgNameApiproductsApiproductName
+      x-api-path-slug: organizationsorg-nameapiproductsapiproduct-name-put
+      parameters:
+      - in: path
+        name: apiproduct_name
+        description: Mention the API Product name
+      - in: query
+        name: Content-Type
+        description: Specify the Content Type
+      - in: path
+        name: org_name
+        description: Mention the organization name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - API
+      - Products
+      - API
+      - Productss
+    delete:
+      summary: Delete Organizations Name Apiproducts Apiproduct Name
+      description: Deletes an API product.
+      operationId: deleteOrganizationsOrgNameApiproductsApiproductName
+      x-api-path-slug: organizationsorg-nameapiproductsapiproduct-name-delete
+      parameters:
+      - in: path
+        name: apiproduct_name
+        description: Mention the API Product name
+      - in: path
+        name: org_name
+        description: Mention the organization name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - API
+      - Products
+      - API
+      - Productss
+  /organizations/{org_name}/developers/{developer_email}/apps/{app_name}/keys/{consumer_key}/apiproducts/{apiproduct_name}:
+    post:
+      summary: Post Organizations Name Developers Developer Email Apps App Name Keys
+        Consumer Key Apiproducts Apiproduct Name
+      description: Revokes the association of an API Product with a Developer App's
+        consumer key.
+      operationId: postOrganizationsOrgNameDevelopersDeveloperEmailAppsAppNameKeysConsumerKeyApiproductsApiproductName
+      x-api-path-slug: organizationsorg-namedevelopersdeveloper-emailappsapp-namekeysconsumer-keyapiproductsapiproduct-name-post
+      parameters:
+      - in: query
+        name: action
+        description: Mention action as revoke
+      - in: path
+        name: apiproduct_name
+        description: Mention the API Product name
+      - in: path
+        name: app_name
+        description: Mention the app name
+      - in: path
+        name: consumer_key
+        description: Mention the app name
+      - in: query
+        name: Content-Type
+        description: Specify Content Type
+      - in: path
+        name: developer_email
+        description: Mention the developer email
+      - in: path
+        name: org_name
+        description: Mention the organization name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Developers
+      - Developer
+      - Email
+      - Applications
+      - ""
+      - Keys
+      - Consumer
+      - Key
+      - API
+      - Products
+      - API
+      - Productss
+    delete:
+      summary: Delete Organizations Name Developers Developer Email Apps App Name
+        Keys Consumer Key Apiproducts Apiproduct Name
+      description: Removes an API product from a developer app key profile, and thereby
+        renders the developer app unable to access the URIs defined in the API product
+        specified.
+      operationId: deleteOrganizationsOrgNameDevelopersDeveloperEmailAppsAppNameKeysConsumerKeyApiproductsApiproductNam
+      x-api-path-slug: organizationsorg-namedevelopersdeveloper-emailappsapp-namekeysconsumer-keyapiproductsapiproduct-name-delete
+      parameters:
+      - in: path
+        name: apiproduct_name
+        description: Mention the API Product name
+      - in: path
+        name: app_name
+        description: Mention the app name
+      - in: path
+        name: consumer_key
+        description: Mention the app name
+      - in: path
+        name: developer_email
+        description: Mention the developer email
+      - in: path
+        name: org_name
+        description: Mention the organization name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Developers
+      - Developer
+      - Email
+      - Applications
+      - ""
+      - Keys
+      - Consumer
+      - Key
+      - API
+      - Products
+      - API
+      - Productss
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

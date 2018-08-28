@@ -7,59 +7,55 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodle
 x-kinRank: "8"
 x-alexaRank: "84912"
 tags: Products
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Crunch Base Get Products
-  x-api-slug: crunch-base
+- name: Crunch Base - Get Products
+  x-api-slug: products-get
   description: Get Products
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg
   humanURL: http://www.yodlee.com/
-  baseURL: https://api.crunchbase.com//v/3//products
-  tags: Products
+  baseURL: https://api.crunchbase.com//v/3
+  tags: Aggregation, Finance, Finance, Financial Data, SaaS, Technology, Enterprise,
+    Profiles, General Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/products-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/products-get-openapi.md
-- name: Crunch Base Get Products
-  x-api-slug: crunch-base
+- name: Crunch Base - Get Products
+  x-api-slug: productspermalink-get
   description: Get Products Using Permalink
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg
   humanURL: http://www.yodlee.com/
-  baseURL: https://api.crunchbase.com//v/3//products/{permalink}
-  tags: Products,Permalink
+  baseURL: https://api.crunchbase.com//v/3
+  tags: Aggregation, Finance, Finance, Financial Data, SaaS, Technology, Enterprise,
+    Profiles, General Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/productspermalink-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/productspermalink-get-openapi.md
-- name: Crunch Base Get Product Relationships
-  x-api-slug: crunch-base
+- name: Crunch Base - Get Product Relationships
+  x-api-slug: productspermalinkrelationship-name-get
   description: Get Product Relationships
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg
   humanURL: http://www.yodlee.com/
-  baseURL: https://api.crunchbase.com//v/3//products/{permalink}/{relationship_name}
-  tags: Products,Permalink,Relationship,Name
+  baseURL: https://api.crunchbase.com//v/3
+  tags: Aggregation, Finance, Finance, Financial Data, SaaS, Technology, Enterprise,
+    Profiles, General Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/productspermalinkrelationship-name-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/productspermalinkrelationship-name-get-openapi.md
-- name: Crunch Base
-  x-api-slug: crunch-base
-  description: Build and transform financial apps and services with access to financial
-    data through our APIs and digital solutions for banks, developers, and innovators.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1691-yodlee.jpg
-  humanURL: http://www.yodlee.com/
-  baseURL: https://api.crunchbase.com//v/3
-  tags: Products
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/products/master/_listings/envestnet/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://entertainment.express.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://envestnet.stack.network
 - type: x-base
   url: https://rest.developer.yodlee.com/services/srest/
 - type: x-blog

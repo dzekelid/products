@@ -69,48 +69,6 @@ paths:
         description: Tags to associate with the new product
         type: string
       responses:
-        1:
-          description: Photoset not found - The photoset id passed was not the id
-            of avalid photoset owned by the calling user
-        2:
-          description: Photo not found - The photo id passed was not the id of a valid
-            photo owned by the calling user
-        95:
-          description: SSL is required - SSL is required to access the Flickr API
-        96:
-          description: Invalid signature - The passed signature was invalid
-        97:
-          description: Missing signature - The call required signing but no signature
-            was sent
-        98:
-          description: Login failed / Invalid auth token - The login details or auth
-            token passed were invalid
-        99:
-          description: User not logged in / Insufficient permissions - The method
-            requires user authentication but the user was not logged in, or the authenticated
-            method call did not have the required permissions
-        100:
-          description: Invalid API Key - The API key passed was not valid or has expired
-        105:
-          description: Service currently unavailable - The requested service is temporarily
-            unavailable
-        106:
-          description: Write operation failed - The requested operation failed due
-            to a temporary issue
-        111:
-          description: Format "xxx" not found - The requested response format was
-            not found
-        112:
-          description: Method "xxx" not found - The requested method was not found
-        114:
-          description: Invalid SOAP envelope - The SOAP envelope send in the request
-            could not be parsed
-        115:
-          description: Invalid XML-RPC Method Call - The XML-RPC request document
-            could not be parsed
-        116:
-          description: Bad URL found - One or more arguments contained a URL that
-            has been used for abuse on Flickr
         200:
           description: OK
       tags:
@@ -247,36 +205,6 @@ paths:
           description: OK
       tags:
       - Products
-  /?Action=ScanProvisionedProducts:
-    get:
-      summary: Scan Provisioned Products
-      description: |-
-        Returns a paginated list of all the ProvisionedProduct objects that are currently
-                 available (not terminated).
-      operationId: scanProvisionedProducts
-      x-api-path-slug: actionscanprovisionedproducts-get
-      parameters:
-      - in: query
-        name: AcceptLanguage
-        description: The language code to use for this operation
-        type: string
-      - in: query
-        name: AccessLevelFilter
-        description: The access level for obtaining results
-        type: string
-      - in: query
-        name: PageSize
-        description: The maximum number of items to return in the results
-        type: string
-      - in: query
-        name: PageToken
-        description: The page token of the first page retrieved
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Provisioned Products
   /?Action=SearchProducts:
     get:
       summary: Search Products
@@ -361,6 +289,174 @@ paths:
           description: OK
       tags:
       - Products
+  /?Action=UpdateProduct:
+    get:
+      summary: Update Product
+      description: Updates an existing product.
+      operationId: updateProduct
+      x-api-path-slug: actionupdateproduct-get
+      parameters:
+      - in: query
+        name: AcceptLanguage
+        description: The language code to use for this operation
+        type: string
+      - in: query
+        name: AddTags
+        description: Tags to add to the existing list of tags associated with the
+          product
+        type: string
+      - in: query
+        name: Description
+        description: The updated text description of the product
+        type: string
+      - in: query
+        name: Distributor
+        description: The updated distributor of the product
+        type: string
+      - in: query
+        name: Id
+        description: The identifier of the product for the update request
+        type: string
+      - in: query
+        name: Name
+        description: The updated product name
+        type: string
+      - in: query
+        name: Owner
+        description: The updated owner of the product
+        type: string
+      - in: query
+        name: RemoveTags
+        description: Tags to remove from the existing list of tags associated with
+          the product
+        type: string
+      - in: query
+        name: SupportDescription
+        description: The updated support description for the product
+        type: string
+      - in: query
+        name: SupportEmail
+        description: The updated support email for the product
+        type: string
+      - in: query
+        name: SupportUrl
+        description: The updated support URL for the product
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Products
+  /?Action=ScanProvisionedProducts:
+    get:
+      summary: Scan Provisioned Products
+      description: |-
+        Returns a paginated list of all the ProvisionedProduct objects that are currently
+                 available (not terminated).
+      operationId: scanProvisionedProducts
+      x-api-path-slug: actionscanprovisionedproducts-get
+      parameters:
+      - in: query
+        name: AcceptLanguage
+        description: The language code to use for this operation
+        type: string
+      - in: query
+        name: AccessLevelFilter
+        description: The access level for obtaining results
+        type: string
+      - in: query
+        name: PageSize
+        description: The maximum number of items to return in the results
+        type: string
+      - in: query
+        name: PageToken
+        description: The page token of the first page retrieved
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Provisioned Products
+  /?Action=AssociateProductWithPortfolio:
+    get:
+      summary: Associate Product With Portfolio
+      description: Associates a product with a portfolio.
+      operationId: associateProductWithPortfolio
+      x-api-path-slug: actionassociateproductwithportfolio-get
+      parameters:
+      - in: query
+        name: AcceptLanguage
+        description: The language code to use for this operation
+        type: string
+      - in: query
+        name: PortfolioId
+        description: The portfolio identifier
+        type: string
+      - in: query
+        name: ProductId
+        description: The product identifier
+        type: string
+      - in: query
+        name: SourcePortfolioId
+        description: The identifier of the source portfolio to use with this association
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Portfolios
+  /?Action=DisassociateProductFromPortfolio:
+    get:
+      summary: Disassociate Product From Portfolio
+      description: Disassociates the specified product from the specified portfolio.
+      operationId: disassociateProductFromPortfolio
+      x-api-path-slug: actiondisassociateproductfromportfolio-get
+      parameters:
+      - in: query
+        name: AcceptLanguage
+        description: The language code to use for this operation
+        type: string
+      - in: query
+        name: PortfolioId
+        description: The portfolio identifier
+        type: string
+      - in: query
+        name: ProductId
+        description: The product identifier
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Portfolios
+  /?Action=ListPortfoliosForProduct:
+    get:
+      summary: List Portfolios For Product
+      description: Lists all portfolios that the specified product is associated with.
+      operationId: listPortfoliosForProduct
+      x-api-path-slug: actionlistportfoliosforproduct-get
+      parameters:
+      - in: query
+        name: AcceptLanguage
+        description: The language code to use for this operation
+        type: string
+      - in: query
+        name: PageSize
+        description: The maximum number of items to return in the results
+        type: string
+      - in: query
+        name: PageToken
+        description: The page token of the first page retrieved
+        type: string
+      - in: query
+        name: ProductId
+        description: The product identifier
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Portfolios
   /?Action=TerminateProvisionedProduct:
     get:
       summary: Terminate Provisioned Product
@@ -390,6 +486,54 @@ paths:
         name: TerminateToken
         description: An idempotency token that uniquely identifies the termination
           request
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Provisioned Products
+  /?Action=UpdateProvisionedProduct:
+    get:
+      summary: Update Provisioned Product
+      description: Requests updates to the configuration of an existing ProvisionedProduct
+        object.
+      operationId: updateProvisionedProduct
+      x-api-path-slug: actionupdateprovisionedproduct-get
+      parameters:
+      - in: query
+        name: AcceptLanguage
+        description: The language code to use for this operation
+        type: string
+      - in: query
+        name: PathId
+        description: The identifier of the path to use in the updated ProvisionedProduct
+          object
+        type: string
+      - in: query
+        name: ProductId
+        description: The identifier of the ProvisionedProduct object
+        type: string
+      - in: query
+        name: ProvisionedProductId
+        description: The identifier of the ProvisionedProduct object to update
+        type: string
+      - in: query
+        name: ProvisionedProductName
+        description: 'The updated name of the ProvisionedProduct object '
+        type: string
+      - in: query
+        name: ProvisioningArtifactId
+        description: The provisioning artifact identifier for this product
+        type: string
+      - in: query
+        name: ProvisioningParameters
+        description: A list of ProvisioningParameter objects used to update the         ProvisionedProduct
+          object
+        type: string
+      - in: query
+        name: UpdateToken
+        description: The idempotency token that uniquely identifies the provisioning
+          update         request
         type: string
       responses:
         200:

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Stripe
 x-complete: 1
@@ -275,10 +274,10 @@ paths:
       - Products
     post:
       summary: Add Products
-      description: "Updates the specific product by setting the values of the parameters
-        passed. Any parameters not provided will be left unchanged.Note that a product\u2019s
+      description: Updates the specific product by setting the values of the parameters
+        passed. Any parameters not provided will be left unchanged.Note that a product???s
         attributes are not editable. Instead, you would need to deactivate the existing
-        product and create a new one with the new attribute values."
+        product and create a new one with the new attribute values.
       operationId: postProducts
       x-api-path-slug: productsid-post
       parameters:
@@ -334,4 +333,3 @@ paths:
             has been used for abuse on Flickr
       tags:
       - Products
----
